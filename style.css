@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(218, 190, 80);
+    color:blue;
+}
+.header{
+    width: 1000px;
+    background-color:aqua;
+    margin: 40px auto;
+}
+.container{
+    background-color:blanchedalmond;
+}
