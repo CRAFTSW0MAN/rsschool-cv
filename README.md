@@ -1,1 +1,2 @@
-https://github.com/CRAFTSW0MAN/rsschool-cv/cv
+# rsschool-cv
+https://CRAFTSW0MAN.github.io/rsschool-cv/
