@@ -1,5 +1,5 @@
 body{
-    background-image: url(/assets/maxresdefault_live.jpg);
+    background-image: url(/assets/img/fon2.jpg);
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,13 +18,12 @@ body{
     justify-content: center;
     align-self: end;
 }
-/** настройка меню**/
+/** menu setting**/
 .list-item{
     background-color: #651fff;
-    color: #d581e3;
     font-size: 25px;
     height: 30px;
-    width: 100px;
+    width: 110px;
     padding: 5px;
     list-style-type: none;
     text-align: center;
@@ -42,11 +41,19 @@ body{
 }
 .list-item:hover{
     background-color: #cf89db;
-    color: #000000;
     cursor: pointer;
 }
+.list-item-link{
+    color: #d581e3;
+    text-decoration:none;
+    transition: opacity 200ms;
+}
+.list-item-link:hover{
+    color: #000000;
+    text-decoration: underline;
+}
 .header-user{
-    background-image: url(/assets/fon.jpg);
+    background-image: url(/assets/img/fon.jpg);
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,15 +71,16 @@ body{
     position: relative;
     border-radius: 10px;
     top: 55px;
-    right: 60px;
+    right: 100px;
     width: 152px;
     height: 270px;
 }
+/**setting lines around**/
 .user-image-block1{
     position: absolute;
     display: block;
     top: 24px;
-    right: 50px;
+    right: 84px;
     width: 152px;
     height: 270px;
     border-right: 2px solid #9c27b0;
@@ -82,7 +90,7 @@ body{
     position: absolute;
     display: block;
     top: 84px;
-    right: 80px;
+    right: 115px;
     width: 152px;
     height: 270px;
     border-left: 2px solid #9c27b0;
