@@ -1,0 +1,107 @@
+body{
+    background-image: url(/assets/maxresdefault_live.jpg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    width: 1440px;
+    height: auto;
+    background-color: #303030;
+    margin: 40px auto 0;
+    border-radius: 20px 20px 0 0;
+}
+.header-menu_list{
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+}
+/** настройка меню**/
+.list-item{
+    background-color: #651fff;
+    color: #d581e3;
+    font-size: 25px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+    border-top: 2px solid #9c27b0;
+    transition: opacity 200ms;
+}
+.list-item:first-child{
+    border-top: 2px solid #9c27b0;
+    border-left: 2px solid #9c27b0;
+    border-radius: 15px 0 0 0;
+}
+.list-item:last-child{
+    border-top: 2px solid #9c27b0;
+    border-radius: 0 15px 0 0;
+}
+.list-item:hover{
+    background-color: #cf89db;
+    color: #000000;
+    cursor: pointer;
+}
+.header-user{
+    background-image: url(/assets/fon.jpg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.user-image{
+    position: relative;
+}
+.user-image-img {
+    position: relative;
+    border-radius: 10px;
+    top: 55px;
+    right: 60px;
+    width: 152px;
+    height: 270px;
+}
+.user-image-block1{
+    position: absolute;
+    display: block;
+    top: 24px;
+    right: 50px;
+    width: 152px;
+    height: 270px;
+    border-right: 2px solid #9c27b0;
+    border-top: 2px solid #9c27b0;
+}
+.user-image-block2{
+    position: absolute;
+    display: block;
+    top: 84px;
+    right: 80px;
+    width: 152px;
+    height: 270px;
+    border-left: 2px solid #9c27b0;
+    border-bottom: 2px solid #9c27b0;
+}
+.user-info-name{
+    padding: 20px 100px 0;
+    color: #FFFFFF;
+    font-size: 70px;
+    mix-blend-mode: overlay;
+}
+.user-info-profession{
+    padding: 0 150px;
+    font-size: 40px;
+    mix-blend-mode: overlay;
+}
+.main{
+    height: 1000px;
+    width: 1440px;
+    background-color: #303030;
+    margin: 0 auto;
+}
