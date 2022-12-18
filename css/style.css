@@ -5,7 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/assets/img/fon2.jpg);
+    background-image: url(../assets/img/fon2.jpg);
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ body{
     text-decoration: underline;
 }
 .header-user{
-    background-image: url(/assets/img/fon.jpg);
+    background-image: url(../assets/img/fon.jpg);
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,6 @@ body{
 /**setting lines around**/
 .user-image-block1{
     position: absolute;
-    display: block;
     top: 24px;
     right: 84px;
     width: 152px;
@@ -103,6 +102,16 @@ body{
     border-left: 2px solid #9c27b0;
     border-bottom: 2px solid #9c27b0;
 }
+.user-image-block3{
+    position: absolute;
+    top: 355px;
+    width: 240px;
+    height: 40px;
+    border-bottom: 2px solid #9c27b0;
+    border-left: 2px solid #9c27b0;
+    border-radius: 0 0 0 10px;
+
+}
 .user-info-name{
     padding: 20px 100px 0;
     color: #FFFFFF;
@@ -116,11 +125,181 @@ body{
 }
 /**main setting**/
 .main{
-    height: 1000px;
+    display: flex;
+    justify-content: center;
     width: 1440px;
     background-color: #303030;
     margin: 0 auto;
+    color: #FFFFFF;
 }
+/**aside setting**/
+.main-info{
+    width: 450px;
+    height: 70vh;
+    margin: 150px 0 0 70px;
+    font-size: 21px;
+}
+.main-info-block{
+    position: relative;
+    border-right: 2px solid #9c27b0;
+    height: 700px;
+    bottom: 27px;
+    right: 3px;
+}
+.info-contacts{
+    padding-top: 70px;
+}
+.info-contacts-title {
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    background-color: #9c27b0;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    font-size: 30px;
+    transition: opacity 200ms;
+}
+.info-contacts-title:hover{
+    background-color: #cf89db;
+    color: #000000;
+    cursor: pointer;
+}
+.info-contacts-details{
+    width: 100%;
+    border-top: 2px solid #9c27b0;
+    border-radius: 0 20px 0 0;
+    transition: opacity 200ms;
+}
+.details-tel{
+    list-style-type: none;
+}
+.details-tel-link{
+    display: block;
+    margin-top: 25px;
+    font-size: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 200ms;
+}
+.details-tel:hover{
+    color: #cf89db;
+    text-decoration: underline;
+}
+.details-email{
+    list-style-type: none;
+}
+.details-email-link{
+    display: block;
+    font-size: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.details-email:hover{
+    color: #cf89db;
+    text-decoration: underline;
+}
+.info-education-title{
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    background-color: #9c27b0;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    font-size: 30px;
+    transition: opacity 200ms;
+}
+.info-education-title:hover{
+    background-color: #cf89db;
+    color: #000000;
+    cursor: pointer;
+}
+.info-education{
+    margin-top: 50px;
+}
+.info-education-details{
+    width: 100%;
+    border-top: 2px solid #9c27b0;
+    border-radius: 0 20px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.details-block-date{
+    padding: 0;
+    margin: 20px 20px 5px 40px;
+    font-size: 18px;
+}
+.details-block-designation{
+    padding: 0;
+    margin: 0 20px 25px 40px;
+    font-size: 18px;
+}
+.details-information{
+    margin-top: 20px;
+}
+.info-skills-title{
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    background-color: #9c27b0;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    font-size: 30px;
+    transition: opacity 200ms;
+}
+.info-skills-title:hover{
+    background-color: #cf89db;
+    color: #000000;
+    cursor: pointer;
+}
+.info-skills-details{
+    width: 100%;
+    border-top: 2px solid #9c27b0;
+    border-radius: 0 20px 0 0;
+}
+.info-language-title{
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    background-color: #9c27b0;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    font-size: 30px;
+    transition: opacity 200ms;
+}
+.info-language-title:hover{
+    background-color: #cf89db;
+    color: #000000;
+    cursor: pointer;
+}
+.info-language-details{
+    width: 100%;
+    border-top: 2px solid #9c27b0;
+    border-radius: 0 20px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+.main-content{
+    width: 990px;
+}
+
+
+
+
+
+
+
+
+
+
 /** footer setting**/
 .footer{
     width: 1440px;
@@ -129,19 +308,19 @@ body{
     margin: 0 auto;
 }
 .footer-info{
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
     display: flex;
     justify-content:space-around;
     align-items: center;
-    color: #FFFFFF;
+    color: #d581e3;
 }
 .footer-githab-img{
     width: 90px;
     height: 90px;
 }
 .footer-rs_school_js-img{
-    height: 90px;
+    height: 80px;
 }
 .footer-info-year{
     font-size: 30px;
