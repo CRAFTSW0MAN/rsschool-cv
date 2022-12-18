@@ -13,8 +13,7 @@
 * HTML5
 * CSS/SASS/SCSS
 * JavaScript Basics
-* Git, GitHub Git Lab
-* VS Code
+* Git, GitHub GitLab
 * React Basics
 -------
 ### Education
