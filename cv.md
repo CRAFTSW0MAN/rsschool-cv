@@ -9,7 +9,7 @@
 ### Briefly About Myself:
 > I am new to Frontend Developer. Before these courses, I tried to study on my own using videos and materials on the Internet, but I realized that I needed to structure my training. 2 months ago I graduated from courses in Innopolis University on Frontend Developert.I hope I can learn to understand JS better here, learn how to ask questions correctly and find answers to them. But most importantly, I hope that I will learn to quickly complete all the tasks .
 -------
-###Skills and Proficiency:
+### Skills and Proficiency:
 * HTML5
 * CSS/SASS/SCSS
 * JavaScript Basics
