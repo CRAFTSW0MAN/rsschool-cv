@@ -49,12 +49,7 @@
 
                 User = parseInt(User);
             
-                if  (User < NumRansom ) {
-                    attempt--;
-                    alert(`Не угадали! Загаданное число больше, осталось ${attempt} попыток!`);
-                    console.log (NumRansom);
-                    BotGame(attempt);
-                } else if (User === NumRansom ) {
+                if (User === NumRansom ) {
                     let Victory = confirm (`Поздравляю, Вы угадали!!!Загаданное число $    {NumRansom}!!!Хотели бы сыграть еще?`);
                     if (Victory == true) {
                         Game();
@@ -64,14 +59,6 @@
                         console.log (NumRansom);
                         return;
                     }
-                } else if ( User > NumRansom ) {
-                    attempt--;
-                    alert(`Не угадали! Загаданное число меньше, осталось ${attempt} попыток!`);
-                    console.log (NumRansom);
-                    BotGame(attempt);
-                } else { // при поптыке ввести любые символы "длрлорплопроп"
-                    alert(`Введите число!`);
-                    BotGame(attempt);
                 }
             }
             FuncGame();
