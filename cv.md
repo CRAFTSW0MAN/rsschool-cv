@@ -9,7 +9,7 @@
 ### Briefly About Myself:
 > I am new to Frontend Developer. Before these courses, I tried to study on my own using videos and materials on the Internet, but I realized that I needed to structure my training. 2 months ago I graduated from courses in Innopolis University on Frontend Developert.I hope I can learn to understand JS better here, learn how to ask questions correctly and find answers to them. But most importantly, I hope that I will learn to quickly complete all the tasks .
 -------
-###Skills and Proficiency:
+### Skills and Proficiency:
 * HTML5
 * CSS/SASS/SCSS
 * JavaScript Basics
@@ -49,12 +49,7 @@
 
                 User = parseInt(User);
             
-                if  (User < NumRansom ) {
-                    attempt--;
-                    alert(`Не угадали! Загаданное число больше, осталось ${attempt} попыток!`);
-                    console.log (NumRansom);
-                    BotGame(attempt);
-                } else if (User === NumRansom ) {
+                if (User === NumRansom ) {
                     let Victory = confirm (`Поздравляю, Вы угадали!!!Загаданное число $    {NumRansom}!!!Хотели бы сыграть еще?`);
                     if (Victory == true) {
                         Game();
@@ -64,14 +59,6 @@
                         console.log (NumRansom);
                         return;
                     }
-                } else if ( User > NumRansom ) {
-                    attempt--;
-                    alert(`Не угадали! Загаданное число меньше, осталось ${attempt} попыток!`);
-                    console.log (NumRansom);
-                    BotGame(attempt);
-                } else { // при поптыке ввести любые символы "длрлорплопроп"
-                    alert(`Введите число!`);
-                    BotGame(attempt);
                 }
             }
             FuncGame();
