@@ -127,54 +127,27 @@
                     <div class="code-block">
                         <pre class="code-block-pre">
                             <code>
-Игра "Угадай число"
-const Game = () => {
-    let Random = Math.floor(Math.random() * 10) + 1;
-    let attempt = 5;
-
-    const BotGame = (attempt) => {
-        let NumRansom = Random;
-        let User = prompt(`Угадай число от 1 до 10`);
-
-        const FuncGame = () => {
-            if (attempt == 1){
-                let End = confirm (`Попытки закончились, хотите сыграть еще?`);
-                if (End == true) {
-                    Game();
-                } else { // конец игры при нажатии "отмена"
-                    alert(`Игра закончена!`);
-                    console.log (User);
-                    console.log (NumRansom);
-                    return;
-                }       
-            }
-            if (User === null){
-                alert(`Игра закончена!`);
-                console.log (NumRansom);
-                return;
-            }
-
-            User = parseInt(User);
-        
-            if (User === NumRansom ) {
-                let Victory = confirm (`Поздравляю, Вы угадали!!!Загаданное число $    {NumRansom}!!!Хотели бы сыграть еще?`);
-                if (Victory == true) {
-                    Game();
-                } else { // конец игры при нажатии "отмена"
-                    alert(`Игра закончена!`);
-                    console.log (User);
-                    console.log (NumRansom);
-                    return;
-                }
+        function getLanguageList(){
+            let language = localStorage.getItem('Language');
+            if(language === 'ru'){
+                buttonEn.style.background = "rgb(180, 184, 183)";
+                for(let key in languageList){
+                    document.querySelector('.lng-' + key).innerHTML = languageList[key].ru;
+                };
+                for(let key in placeholderLang){
+                    document.querySelector('.pl-' + key).placeholder = placeholderLang[key].ru;
+                };
+            }else{
+                buttonRu.style.background = "rgb(180, 184, 183)";
+                for(let key in languageList){
+                    document.querySelector('.lng-' + key).innerHTML = languageList[key].en;
+                };
+                for(let key in placeholderLang){
+                    document.querySelector('.pl-' + key).placeholder = placeholderLang[key].en;
+                };
             }
         }
-        FuncGame();
-        return;
-    }
-    BotGame(5);
-    return;
-}
-Game();
+        getLanguageList();
                         </code>
                         </pre>
                     </div>
